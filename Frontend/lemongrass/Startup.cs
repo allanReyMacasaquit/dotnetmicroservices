@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using lemongrass.Services;
+using lemongrass.Services.IServices;
+using static lemongrass.StaticDetails;
 
 namespace lemongrass
 {
@@ -24,6 +27,11 @@ namespace lemongrass
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddHttpClient<IBaseProductService, ProductService>();
+
+            StaticDetails.ProductAPIBase = Configuration["ServiceUrls:ProductAPI"];
+
+            services.AddScoped<IBaseProductService, ProductService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

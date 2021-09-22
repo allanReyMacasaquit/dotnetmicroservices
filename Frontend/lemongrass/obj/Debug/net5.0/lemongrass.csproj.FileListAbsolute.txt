@@ -38,3 +38,4 @@ C:\Users\cvmac\restobar\Frontend\lemongrass\obj\Debug\net5.0\ref\lemongrass.dll
 C:\Users\cvmac\restobar\Frontend\lemongrass\obj\Debug\net5.0\lemongrass.pdb
 C:\Users\cvmac\restobar\Frontend\lemongrass\obj\Debug\net5.0\lemongrass.genruntimeconfig.cache
 C:\Users\cvmac\restobar\Frontend\lemongrass\obj\Debug\net5.0\lemongrass.csproj.CopyComplete
+C:\Users\cvmac\restobar\Frontend\lemongrass\bin\Debug\net5.0\Newtonsoft.Json.dll
